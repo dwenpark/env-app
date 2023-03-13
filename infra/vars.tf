@@ -1,0 +1,5 @@
+
+resource "aws_key_pair" "mykey" {
+  key_name   = "mykey"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCVApE1YfKXcEGwpkuiuXYrCQ6Fk7Hb+B4jyVH6ZLvboKkJn35uObZ/7XT+hoAT2FWUnX9xNEhqvucSuh2UD4zmJJoH486w9YJeznUM+Mz/Np5GbEsT21++XnniE4HRQHbWxrLtt3r/oZQ3dKyGLWxo5nlwk9qUqGwx2+TOjkOb+JZ8dUlPctw/c5emTUBSLmnUysR/xVqopZYUW2q3slD0HuO5cTKUdkG0zff+0/2UAr2lhl1QT8hBoxtWycw353D/cpaMQz9Sb7F9+J55NUlyfJHksfJnXsBJIFE7q87VNl/1X0tX2Cq0kUxYksqJ9YBFv1hyRRufsq/DmyCnB/Lv3GJSmPFrpx1dqTOyxUXRU8nF6l1+A2L9HIKlUHWV5LhlXI9qib23gQzehs5aQfN40OmPGk8/+cENAXt8wNVCHZh2lubzkEfnqCE/XcojHxu/YCmcwT/JEUjiFaC3j0v5TNxRvFdrOGvxAPUEpByG8P0MIfGkXsoQR/QqHfU88TE= dwen@Jongui-MacBookAir.local"
+}
