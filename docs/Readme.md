@@ -46,6 +46,7 @@ DB: MySQL
 - aws configure를 통해 키 인증을 한 뒤, /infra 에서 terraform apply 하시면 됩니다.
 - 비밀 키는 제가 임의로 생성해둔 pem를 따로 전달드리겠습니다.
 - 그 후, init.sh을 이용하여 서비스합니다.
+- 생성된 EC2의 EIP를 복사해둡니다.
 
 ## 애플리케이션
 - 처음 서비스를 시작하고 docker exec -it $(docker ps -qf name=backend) bash 에서 python3 manage.py migrate 
@@ -69,6 +70,8 @@ INSERT INTO users
 - init.sh에서 마지막에 실행하는 docker service create에서 MYSQL_ROOT_PASSWORD, HOST_IP, ADMIN_USER, ADMIN_PASSWORD는 필수로 지정해야하며, ADMIN_USER, ADMIN_PASSWORD는 상단 쿼리 INSERT INTO users와 동일하게 구성해주시면 됩니다.
 
 ## 이용 방법
+EC2 EIP 80 포트로 접속 가능합니다.
+
 admin / admin 으로 처음 어드민 페이지로 접속가능합니다.
 admin인 팀은 admin 페이지로 접속되며 유저 생성, 팀 생성, 유저 삭제가 가능합니다.
 
