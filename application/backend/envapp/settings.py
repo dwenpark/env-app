@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'envapp.wsgi.application'
 DATABASES = {
     'default' : {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': "172.17.01",
+        'HOST': "172.17.0.1",
         'NAME': 'envapp',
         'USER':  "admin",
         'PASSWORD': "admin",
